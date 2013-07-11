@@ -53,7 +53,6 @@ typedef enum {
 
 + (BOOL)isPad;
 + (BOOL)isOS7;
-+ (CGFloat)statusBarHeight;
 
 + (double)randomWithMin:(double)min max:(double)max;
 

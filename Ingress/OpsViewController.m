@@ -48,7 +48,6 @@
 	labelBackgroundImage.image = [[UIImage imageNamed:@"ops_background.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(2, 2, 2, 236)];
 	
 	CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
-	CGFloat statusBarHeight = [Utilities statusBarHeight];
 	
 	NSArray *views = @[@"ITEMS", @"INTEL", @"MISSION", @"RECRUIT", @"DEVICE"];
 	
@@ -57,7 +56,7 @@
 //	buttonsScrollView.alwaysBounceHorizontal = NO;
 	buttonsScrollView.clipsToBounds = NO;
 	buttonsScrollView.showsHorizontalScrollIndicator = NO;
-	buttonsScrollView.frame = CGRectMake(0, statusBarHeight+32, viewWidth, 44);
+	buttonsScrollView.frame = CGRectMake(0, 32, viewWidth, 44);
 	
 	int i = 0;
 	CGFloat offset = 0;
@@ -104,13 +103,12 @@
 	}
 	
 	CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
-	CGFloat statusBarHeight = [Utilities statusBarHeight];
 	
-	buttonsScrollView.frame = CGRectMake(0, statusBarHeight+32, viewWidth, 44);
+	buttonsScrollView.frame = CGRectMake(0, 32, viewWidth, 44);
 	
-	opsLabel.frame = CGRectMake(0, statusBarHeight, viewWidth, 32);
+	opsLabel.frame = CGRectMake(0, 0, viewWidth, 32);
 	labelBackgroundImage.frame = opsLabel.frame;
-	opsCloseButton.frame = CGRectMake(0, statusBarHeight, 62, 34);
+	opsCloseButton.frame = CGRectMake(0, 0, 62, 34);
 }
 
 #pragma mark - IBActions
@@ -185,10 +183,9 @@
 			break;
 	}
 	
-	CGFloat statusBarHeight = [Utilities statusBarHeight];
 	CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
-	CGFloat viewHeight = [UIScreen mainScreen].bounds.size.height-statusBarHeight;
-	viewController.view.frame = CGRectMake(0, statusBarHeight+76, viewWidth, viewHeight-76);
+	CGFloat viewHeight = [UIScreen mainScreen].bounds.size.height;
+	viewController.view.frame = CGRectMake(0, 76, viewWidth, viewHeight-96);
 	
 	[self.view addSubview:viewController.view];
 	[self.view sendSubviewToBack:viewController.view];

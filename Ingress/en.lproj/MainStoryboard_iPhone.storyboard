@@ -9,7 +9,7 @@
         <!--Items View Controller-->
         <scene sceneID="hKS-7Z-ZNQ">
             <objects>
-                <viewController storyboardIdentifier="ItemsViewController" wantsFullScreenLayout="YES" id="UPB-vb-vXl" customClass="ItemsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemsViewController" id="UPB-vb-vXl" customClass="ItemsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TF2-3t-Eaf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
         <!--Intel View Controller-->
         <scene sceneID="QxF-5D-TQB">
             <objects>
-                <viewController storyboardIdentifier="IntelViewController" wantsFullScreenLayout="YES" id="9cv-bD-s30" customClass="IntelViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntelViewController" id="9cv-bD-s30" customClass="IntelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y6C-wi-NO8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,7 +108,7 @@
         <!--Comm View Controller-->
         <scene sceneID="qvd-LH-EQa">
             <objects>
-                <viewController storyboardIdentifier="CommViewController" wantsFullScreenLayout="YES" id="ZBH-Po-zoq" customClass="CommViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CommViewController" id="ZBH-Po-zoq" customClass="CommViewController" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="KKy-Ai-3Pl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="393"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1277,7 +1277,7 @@
         <!--Portal Detail View Controller-->
         <scene sceneID="tKq-tx-ryc">
             <objects>
-                <viewController storyboardIdentifier="PortalDetailViewController" wantsFullScreenLayout="YES" id="EpT-PX-0Xb" customClass="PortalDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PortalDetailViewController" id="EpT-PX-0Xb" customClass="PortalDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ROn-sT-oc0">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1318,12 +1318,13 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wyu-kT-rIY" firstAttribute="leading" secondItem="ROn-sT-oc0" secondAttribute="leading" type="default" id="0MM-cd-H1W"/>
-                            <constraint firstItem="rGS-d7-brT" firstAttribute="top" secondItem="ROn-sT-oc0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="4Gd-IM-DJl"/>
+                            <constraint firstItem="rGS-d7-brT" firstAttribute="top" secondItem="ROn-sT-oc0" secondAttribute="top" type="default" id="1kO-r3-Jct"/>
+                            <constraint firstItem="wyu-kT-rIY" firstAttribute="top" secondItem="ROn-sT-oc0" secondAttribute="top" type="default" id="F1g-sh-zSI"/>
                             <constraint firstItem="NlW-ML-ob6" firstAttribute="leading" secondItem="ROn-sT-oc0" secondAttribute="leading" type="default" id="FSj-K3-otc"/>
-                            <constraint firstItem="rGS-d7-brT" firstAttribute="leading" secondItem="ROn-sT-oc0" secondAttribute="leading" type="default" id="OCZ-CI-eYG"/>
+                            <constraint firstItem="rGS-d7-brT" firstAttribute="leading" secondItem="ROn-sT-oc0" secondAttribute="leading" type="user" id="OCZ-CI-eYG"/>
+                            <constraint firstItem="NlW-ML-ob6" firstAttribute="top" secondItem="ROn-sT-oc0" secondAttribute="top" type="default" id="OZ4-e1-eqa"/>
                             <constraint firstItem="NlW-ML-ob6" firstAttribute="trailing" secondItem="ROn-sT-oc0" secondAttribute="trailing" type="default" id="fCY-Y3-xMr"/>
-                            <constraint firstItem="wyu-kT-rIY" firstAttribute="top" secondItem="ROn-sT-oc0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="l9f-vf-X1X"/>
-                            <constraint firstItem="NlW-ML-ob6" firstAttribute="top" secondItem="ROn-sT-oc0" secondAttribute="top" constant="20" symbolic="YES" type="default" id="wEE-uO-ygx"/>
+                            <constraint firstItem="rGS-d7-brT" firstAttribute="trailing" secondItem="ROn-sT-oc0" secondAttribute="trailing" type="user" id="yus-0c-Iqn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2329,7 +2330,7 @@
         <!--Portal Keys View Controller-->
         <scene sceneID="pOX-u1-cSZ">
             <objects>
-                <tableViewController storyboardIdentifier="PortalKeysViewController" wantsFullScreenLayout="YES" id="pnd-0d-rSp" customClass="PortalKeysViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PortalKeysViewController" id="pnd-0d-rSp" customClass="PortalKeysViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="V5K-Z3-PLK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2422,7 +2423,7 @@
         <!--Ops View Controller-->
         <scene sceneID="rZA-dh-eaz">
             <objects>
-                <viewController storyboardIdentifier="OpsViewController" wantsFullScreenLayout="YES" id="qnH-ai-9uQ" customClass="OpsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OpsViewController" id="qnH-ai-9uQ" customClass="OpsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQB-G9-BUn">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2462,14 +2463,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zEv-3b-yHD" firstAttribute="leading" secondItem="HQB-G9-BUn" secondAttribute="leading" type="user" id="4Ob-n3-ZZx"/>
-                            <constraint firstItem="zEv-3b-yHD" firstAttribute="top" secondItem="HQB-G9-BUn" secondAttribute="top" constant="20" type="user" id="D7f-Tt-TFd"/>
+                            <constraint firstItem="zIk-qk-ReO" firstAttribute="top" secondItem="HQB-G9-BUn" secondAttribute="top" type="default" id="TNb-rZ-SbR"/>
                             <constraint firstItem="zIk-qk-ReO" firstAttribute="leading" secondItem="HQB-G9-BUn" secondAttribute="leading" type="user" id="WfY-0g-sot"/>
                             <constraint firstItem="zIk-qk-ReO" firstAttribute="trailing" secondItem="HQB-G9-BUn" secondAttribute="trailing" type="user" id="bJs-Wi-PUO"/>
-                            <constraint firstItem="DD1-CI-J7z" firstAttribute="top" secondItem="HQB-G9-BUn" secondAttribute="top" constant="20" symbolic="YES" type="user" id="bYL-RN-SzC"/>
                             <constraint firstItem="DD1-CI-J7z" firstAttribute="leading" secondItem="HQB-G9-BUn" secondAttribute="leading" type="user" id="bqh-FC-D6H"/>
+                            <constraint firstItem="zEv-3b-yHD" firstAttribute="top" secondItem="HQB-G9-BUn" secondAttribute="top" type="default" id="fpR-Fz-CCU"/>
                             <constraint firstItem="zIk-qk-ReO" firstAttribute="trailing" secondItem="HQB-G9-BUn" secondAttribute="trailing" type="user" id="oNG-5J-hIA"/>
+                            <constraint firstItem="DD1-CI-J7z" firstAttribute="top" secondItem="HQB-G9-BUn" secondAttribute="top" type="default" id="rl6-GG-2SE"/>
                             <constraint firstItem="zEv-3b-yHD" firstAttribute="trailing" secondItem="HQB-G9-BUn" secondAttribute="trailing" type="user" id="ud8-kr-Nqv"/>
-                            <constraint firstItem="zIk-qk-ReO" firstAttribute="top" secondItem="HQB-G9-BUn" secondAttribute="top" constant="20" type="user" id="ykf-Ra-rdd"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

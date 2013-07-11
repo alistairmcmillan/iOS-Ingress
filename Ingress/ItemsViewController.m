@@ -26,7 +26,7 @@
 	slider.zoomOutAnimationDisabled = YES;
 	slider.dataSource = self;
 	CGRect frame = self.view.frame;
-	frame.size.height -= passcodeContainerView.frame.size.height;
+    frame.origin.y = 0;
 	slider.view.frame = frame;
 	[self.view addSubview:slider.view];
 	[self addChildViewController:slider];
@@ -48,7 +48,7 @@
 		}
 		weakPasscodeContainerView.frame = passcodeContainerViewFrame;
 	}];
-	
+
 }
 
 - (void)didReceiveMemoryWarning {
